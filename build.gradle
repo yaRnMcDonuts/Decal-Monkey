@@ -54,7 +54,6 @@ dependencies {
 install {
     repositories.mavenInstaller {
         pom.version = version
-        pom.artifactId = 'sim-arboreal'
     }
 }
 
