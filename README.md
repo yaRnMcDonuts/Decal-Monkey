@@ -30,8 +30,8 @@ Create and register a new Decal / Texture Effect -
        cratorTextureEffect.setEdgeFade(3);
        cratorTextureEffect.setScale(2); 
        cratorTextureEffect.setDepthPriority(1); 
-       cratorTextureEffect.morphToVisibleSize(8.5f, 6.9f);
-       cratorTextureEffect.usePerlinNoise(3, 7.39f);
+       cratorTextureEffect.morphToVisibleSize(8.5f, 6.9f); //8.5 is the morph speed, 6.9 is the final radius
+       cratorTextureEffect.usePerlinNoise(3, 7.39f);  // 3 is the distance from the edge of the effect to apply noise to. 7.39 is the wavelength
        cratorTextureEffect.setIndefinite(); // causes the decal to ignore its duration, and last indefinitely, or until manually removed
 
        gameState.registerTextureEffect(cratorTextureEffect);
