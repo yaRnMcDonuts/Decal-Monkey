@@ -10,13 +10,10 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'idea'
-apply plugin: 'org.junit.platform.gradle.plugin'
 
 version='0.0.1'
 group='com.aaaagames'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
 
 compileTestJava {
     sourceCompatibility = 1.8
@@ -43,6 +40,7 @@ dependencies {
 
     compile "org.jmonkeyengine:jme3-effects:3.2.+"
     compile "org.jmonkeyengine:jme3-core:3.2.+" 
+    compile "org.jmonkeyengine:jme3-terrain:3.2.+" 
 	
     //compile "com.jme3:jme3-core:unknown" 
 
@@ -54,6 +52,7 @@ dependencies {
 install {
     repositories.mavenInstaller {
         pom.version = version
+        pom.artifactId = 'sim-arboreal'
     }
 }
 
