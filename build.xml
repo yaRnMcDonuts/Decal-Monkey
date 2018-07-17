@@ -78,7 +78,7 @@
             <format property="build.date" pattern="yyyyMMdd" />
         </tstamp>
 
-        <echo message="${build.date}" file="build/classes/simarboreal.build.date" />
+        <echo message="${build.date}" file="build/classes/decalmonkey.build.date" />
     </target>
     
 </project>
